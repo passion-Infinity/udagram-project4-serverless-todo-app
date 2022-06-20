@@ -1,9 +1,9 @@
 import { createLogger } from '../utils/logger'
-import { TodoAccess } from './todosAcess';
+import { TodoAccess } from '../dataLayer/todosAcess';
 import { TodoItem } from '../models/TodoItem'
 import { CreateTodoRequest } from '../requests/CreateTodoRequest'
 import { UpdateTodoRequest } from '../requests/UpdateTodoRequest'
-import { AttachmentUtils } from './attachmentUtils'
+import { AttachmentUtils } from '../helpers/attachmentUtils'
 import * as uuid from 'uuid'
 
 const logger = createLogger('todos')
